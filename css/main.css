@@ -31,7 +31,7 @@ body {
 .container {
     display: flex; /* Usar flexbox para centrar el contenido */
     flex-direction: column; /* Colocar elementos en columna */
-    justify-content: center; /* Centrar verticalmente */
+    justify-content: flex-start; /* Comienza desde el principio */
     align-items: center; /* Centrar horizontalmente */
     height: 100%; /* Para ocupar toda la altura */
     text-align: center; /* Centrar el texto */
@@ -52,7 +52,7 @@ h1 {
 /* Estilo para los párrafos */
 p {
     font-size: 1.2em; /* Tamaño de la fuente para los párrafos */
-    max-width: 600px; /* Ancho máximo del párrafo */
+    max-width: 1700px; /* Ancho máximo del párrafo */
 }
 
 /* Estilos para el navbar */
@@ -89,4 +89,45 @@ p {
     border-radius: 5px; /* Bordes redondeados */
     font-size: 26px; /* Tamaño de fuente más grande */
 }
+
+
+
+.card-img-top {
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen para ajustarse al contenedor */
+}
+
+/* Estilos para el contenedor de la página de inicio */
+.home-container {
+    display: flex; /* Usar flexbox para centrar el contenido */
+    flex-direction: column; /* Colocar elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: calc(100vh - 56px); /* Resta la altura de la navbar */
+    margin-top: 56px; /* Margen para no quedar detrás de la navbar */
+    text-align: center; /* Centrar el texto */
+}
+
+.card {
+    color: black; /* Cambia el color del texto de las tarjetas a negro */
+}
+
+/* Estilo personalizado para la tarjeta más ancha */
+.blog-card {
+    background-color: rgba(255, 255, 255, 0.705); /* Blanco con 60% de transparencia */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 1800px; /* Ajustar este valor para hacerla más ancha */
+    width: 100%; /* Asegura que ocupe el 100% del espacio disponible */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.blog-card p {
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente si es necesario */
+    color: black; /* Texto negro */
+    line-height: 1.6; /* Mejora el espaciado entre líneas */
+}
+
 
